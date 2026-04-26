@@ -1,13 +1,33 @@
 {
-    "fabric:load_conditions": [],
-    "forge:conditions": [],
-    "neoforge:conditions": [],
-    "type": "growable_ores_extension:cane_converter",
-    "ingredient": {
-        "item": "growable_ores:honeycomb_cane"
-    },
-    "result": {
-        "id": "minecraft:honeycomb",
-        "count": 1
+    "bookshelf:load_conditions": [
+        {
+            "type": "bookshelf:block_exists",
+            "values": [
+                "growable_ores:honeycomb_cane"
+            ]
+        }
+    ],
+    "type": "botanypots:block_derived_crop",
+    "block": "growable_ores:honeycomb_cane",
+    "soil": {
+        "type": "bookshelf:either",
+        "fabric:type": "bookshelf:either",
+        "ingredients": [
+            {
+                "type": "bookshelf:block_tag",
+                "fabric:type": "bookshelf:block_tag",
+                "tag": "minecraft:sand"
+            },
+            {
+                "type": "bookshelf:block_tag",
+                "fabric:type": "bookshelf:block_tag",
+                "tag": "minecraft:dirt"
+            },
+            {
+                "type": "bookshelf:block_tag",
+                "fabric:type": "bookshelf:block_tag",
+                "tag": "growableores:growblock"
+            }
+        ]
     }
 }

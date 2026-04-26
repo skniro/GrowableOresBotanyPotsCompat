@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.7-SNAPSHOT'
+    id 'fabric-loom' version '1.13-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -57,6 +57,7 @@ dependencies {
     modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
     modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
     modRuntimeOnly("curse.maven:botany-pots-353928:6910389")
+    modImplementation("com.skniro:GrowableOres:${growableores_version}-${mc_version}-Fabric")
     modRuntimeOnly group: 'net.darkhax.pricklemc', name: "prickle-fabric-${project.minecraft_version}", version: "${project.prickle_version}"
     modRuntimeOnly group: 'net.darkhax.bookshelf', name: "bookshelf-fabric-${project.minecraft_version}", version: "${project.bookshelf_version}"
    /* include modApi('teamreborn:energy:3.0.0') {

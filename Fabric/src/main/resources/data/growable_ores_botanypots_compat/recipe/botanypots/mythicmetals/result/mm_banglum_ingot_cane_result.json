@@ -3,12 +3,12 @@
     {
       "type": "bookshelf:block_exists",
       "values": [
-        "growable_ores:ot_duratium_ingot_cane"
+        "growable_ores:mm_banglum_ingot_cane"
       ]
     }
   ],
   "type": "botanypots:block_derived_crop",
-  "block": "growable_ores:ot_duratium_ingot_cane",
+  "block": "growable_ores:mm_banglum_ingot_cane",
   "soil": {
     "type": "bookshelf:either",
     "fabric:type": "bookshelf:either",
